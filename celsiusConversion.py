@@ -1,6 +1,7 @@
 if __name__ == '__main__':
     fahrenheit = int(input("Enter the current temperature:"))
     celsius = (5 / 9)*(fahrenheit - 32)
+    print(celsius)
 
     if (fahrenheit <= 32):
         print("Program has frozen.")
