@@ -6,8 +6,26 @@ Sample input given by Codewars is 'a', 'ab', and 'aabb' ie. permutations('aabb')
 Link to challenge: https://www.codewars.com/kata/5254ca2719453dcc0b00027d/train/python
 Note: not fulfilling the full attempt just yet.
 """
+import itertools
 
 def permutations(string):
+    string_arr = list(itertools.permutations(string))  # IN WITH THE NEW, USING ITERTOOLS
+    new_arr = []
+
+    for x in string_arr:
+        new_arr.append(''.join(x))
+
+    print(new_arr)
+    final_arr = []
+
+    for x in new_arr:
+        if x not in final_arr:
+            final_arr.append(x)
+
+    return final_arr
+
+
+"""      OUT WITH THE OLD    
     temp_arr = [string]
     string_arr = list(string)
     final_arr = []
@@ -25,6 +43,7 @@ def permutations(string):
             final_arr.append(x) #Adding elements from temp_arr that are not already in my final_arr
 
     return final_arr
+"""
 
 
 print(permutations('aabb'))
