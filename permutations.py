@@ -3,6 +3,8 @@ Solution to Codewars Challenge "Permutations" in Python.
 "In this kata you have to create all permutations of an input string and remove duplicates, if present.
 This means, you have to shuffle all letters from the input in all possible orders."
 Sample input given by Codewars is 'a', 'ab', and 'aabb' ie. permutations('aabb')
+Link to challenge: https://www.codewars.com/kata/5254ca2719453dcc0b00027d/train/python
+Note: not fulfilling the full attempt just yet.
 """
 
 def permutations(string):
